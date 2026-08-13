@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions générales de vente — Les ateliers créatifs de Joséphine</title>
+<link rel="stylesheet" href="dist/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body class="antialiased" data-page="cgv">
+<div class="bg-flower" style="top: 70px; right: -40px; width: 110px; height: 110px; transform: rotate(10deg); opacity: 0.22;">
+  <svg viewBox="0 0 100 100"><g fill="#D97F1C"><ellipse cx="50" cy="25" rx="9" ry="20"/><ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(36 50 50)"/><ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(72 50 50)"/><ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(108 50 50)"/><ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(144 50 50)"/><ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(180 50 50)"/><ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(216 50 50)"/><ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(252 50 50)"/><ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(288 50 50)"/><ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(324 50 50)"/></g><circle cx="50" cy="50" r="12" fill="#FFD400"/></svg>
+</div>
+
+
+<header class="sticky top-0 z-50 bg-[var(--cream)]/90 backdrop-blur-sm border-b border-[#EADFC9]">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <svg width="36" height="36" viewBox="0 0 100 100" class="shrink-0">
+        <g fill="#D97F1C">
+          <ellipse cx="50" cy="25" rx="9" ry="20"/>
+          <ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(36 50 50)"/>
+          <ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(72 50 50)"/>
+          <ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(108 50 50)"/>
+          <ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(144 50 50)"/>
+          <ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(180 50 50)"/>
+          <ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(216 50 50)"/>
+          <ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(252 50 50)"/>
+          <ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(288 50 50)"/>
+          <ellipse cx="50" cy="25" rx="9" ry="20" transform="rotate(324 50 50)"/>
+        </g>
+        <circle cx="50" cy="50" r="12" fill="#FFD400"/>
+      </svg>
+      <span class="font-display text-lg leading-tight text-[var(--ink)]">Les ateliers créatifs<br><span class="text-terracotta italic text-sm">de Joséphine</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-6 text-[15px]">
+      <a href="index.html" class="nav-link hover:text-terracotta transition" data-page="index">Accueil</a>
+      <div class="relative group" data-page="ateliers">
+        <a href="ateliers-peinture.html" class="nav-link ateliers-trigger hover:text-terracotta transition inline-flex items-center gap-1">
+          Les ateliers
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform group-hover:rotate-180"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="absolute left-0 top-full pt-3 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-150">
+          <div class="bg-white border border-[#EADFC9] rounded-xl shadow-lg py-2 min-w-[200px]">
+            <a href="ateliers-peinture.html" class="block px-4 py-2.5 text-sm hover:bg-[var(--pastel)] hover:text-terracotta transition">Peinture</a>
+            <a href="ateliers-boucles.html" class="block px-4 py-2.5 text-sm hover:bg-[var(--pastel)] hover:text-terracotta transition">Boucles d'oreilles</a>
+          </div>
+        </div>
+      </div>
+      <a href="agenda.html" class="nav-link hover:text-terracotta transition" data-page="agenda">Agenda</a>
+      <a href="creations.html" class="nav-link hover:text-terracotta transition" data-page="creations">Créations</a>
+      <a href="qui-suis-je.html" class="nav-link hover:text-terracotta transition" data-page="qui-suis-je">Qui suis-je</a>
+      <a href="contact.html" class="nav-link hover:text-terracotta transition" data-page="contact">Contact</a>
+      <a href="bons-cadeaux.html" class="btn-outline px-4 py-2 rounded-full text-sm font-medium">Bons cadeaux</a>
+    </nav>
+    <button id="menuBtn" class="lg:hidden text-terracotta" aria-label="Menu" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu lg:hidden border-t border-[#EADFC9] px-6">
+    <nav class="flex flex-col gap-4 py-6 text-[15px]">
+      <a href="index.html" class="hover:text-terracotta transition">Accueil</a>
+      <div>
+        <button type="button" id="ateliersMobileToggle" class="flex items-center justify-between w-full hover:text-terracotta transition" aria-expanded="false">
+          <span>Les ateliers</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="ateliersMobileChevron" class="transition-transform"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div id="ateliersMobileSubmenu" class="mobile-submenu pl-4 flex flex-col gap-3">
+          <a href="ateliers-peinture.html" class="text-[#5A4F42] hover:text-terracotta transition">Peinture</a>
+          <a href="ateliers-boucles.html" class="text-[#5A4F42] hover:text-terracotta transition">Boucles d'oreilles</a>
+        </div>
+      </div>
+      <a href="agenda.html" class="hover:text-terracotta transition">Agenda</a>
+      <a href="creations.html" class="hover:text-terracotta transition">Créations</a>
+      <a href="qui-suis-je.html" class="hover:text-terracotta transition">Qui suis-je</a>
+      <a href="contact.html" class="hover:text-terracotta transition">Contact</a>
+      <a href="bons-cadeaux.html" class="btn-outline px-4 py-2 rounded-full text-sm font-medium inline-block w-fit">Bons cadeaux</a>
+    </nav>
+  </div>
+</header>
+
+<section class="max-w-3xl mx-auto px-6 py-16">
+  <h1 class="font-display text-3xl mb-8">Conditions générales de vente</h1>
+  <div class="space-y-6 text-sm text-[#5A4F42] leading-relaxed">
+    <p>Les présentes conditions de vente sont conclues entre Joséphine le Poittevin, microentreprise située au 339 route de Mende, 34090 Montpellier, enregistrée sous le numéro SIRET 90128781300025, et toute personne physique ou morale souhaitant commander une prestation de services, dénommée ci-après « le Client ».</p>
+
+    <h2 class="font-display text-xl text-[var(--ink)] pt-4">Objet</h2>
+    <p>Les conditions générales de vente contenues dans ce document régissent les relations contractuelles entre l'entreprise et son Client. Les deux parties les acceptent sans réserve. Ces conditions prévalent sur toute autre condition figurant dans tout autre document, sauf dérogation préalable, expresse et écrite. Ce contrat est soumis au droit français.</p>
+    <p>Joséphine le Poittevin se réserve le droit de modifier ses conditions de vente à tout moment. Dans ce cas, les conditions applicables sont celles en vigueur à la date de la commande par le Client.</p>
+
+    <h2 class="font-display text-xl text-[var(--ink)] pt-4">Conditions</h2>
+    <p>Pour s'inscrire à un atelier, le Client doit être âgé d'au moins dix-huit ans. Dans l'hypothèse où le Client serait une personne mineure, celle-ci déclare et reconnaît avoir reçu l'autorisation de ses parents ou du ou des titulaires de l'autorité parentale le concernant pour faire appel à nos services. Elle sera accompagnée d'une personne majeure, qui participera également au même atelier.</p>
+    <p>Le ou les titulaires de l'autorité parentale ont accepté d'être garants du respect de l'ensemble des dispositions des présentes conditions générales de vente.</p>
+
+    <h2 class="font-display text-xl text-[var(--ink)] pt-4">Tarifs</h2>
+    <p>Les tarifs de l'ensemble des prestations sont exprimés en euros. La TVA est non applicable, selon l'article 293B du Code général des impôts.</p>
+    <p>Le tarif indiqué comprend :</p>
+    <p><strong>a) Pour les ateliers de peinture</strong><br>– Le prêt du matériel : chevalet, pinceaux, verre, palette, peinture ;<br>– La toile avec laquelle le Client repart.</p>
+    <p><strong>b) Pour les ateliers de création de boucles d'oreilles</strong><br>– Le prêt du matériel : rouleau, emporte-pièce, couteau, pinceau ;<br>– Les deux paires de pampilles et la paire de créoles en acier inoxydable avec lesquelles le Client repart.</p>
+    <p>Les ateliers créatifs sont une initiative privée : aucune aide financière ni subvention n'est versée à Joséphine le Poittevin.</p>
+
+    <h2 class="font-display text-xl text-[var(--ink)] pt-4">Paiement</h2>
+    <p>Le paiement se fait toujours en amont :<br>– Soit via la plateforme Stripe (paiement par carte bancaire) ;<br>– Soit en espèces, avant le début de l'atelier.</p>
+
+    <h2 class="font-display text-xl text-[var(--ink)] pt-4">Politique d'annulation</h2>
+    <p>En cas d'annulation de la part du Client plus d'une heure avant le début de l'atelier, la réservation sera reportée à une date convenue entre le Client et Joséphine le Poittevin (report valable trois mois).</p>
+    <p>Si le Client annule moins d'une heure avant le début de l'atelier, aucun report ne sera effectué. La séance sera due.</p>
+    <p>En cas d'annulation de la part du Client, aucun remboursement ne sera effectué.</p>
+
+    <h2 class="font-display text-xl text-[var(--ink)] pt-4">Responsabilité</h2>
+    <p>Joséphine le Poittevin décline toute responsabilité dans le cas où le Client tache ses vêtements ou lui-même lors des ateliers.</p>
+    <p>Les ateliers de création de boucles d'oreilles impliquent l'utilisation d'objets coupants et d'un four. Joséphine le Poittevin décline toute responsabilité dans le cas où le Client se blesse à la suite d'un mauvais usage du matériel.</p>
+    <p>À défaut d'accord entre les parties, les présentes conditions étant soumises au droit français, tout litige susceptible de s'élever entre les parties sera de la compétence des tribunaux du ressort du siège social de Joséphine le Poittevin, et ce, quel que soit le lieu de réalisation des prestations.</p>
+    <p>Dommages et intérêts ne pourront être exigés.</p>
+
+    <h2 class="font-display text-xl text-[var(--ink)] pt-4">Confidentialité</h2>
+    <p>Les contacts et entretiens sont réalisés en toute confidentialité. Les informations et les données personnelles fournies par le Client permettent à Joséphine le Poittevin de traiter ses demandes.</p>
+    <p>Conformément à la loi Informatique et Libertés du 6 janvier 1978, le Client dispose d'un droit d'opposition, d'accès, de rectification et de suppression des données qui le concernent.</p>
+
+    <h2 class="font-display text-xl text-[var(--ink)] pt-4">Droit de refus</h2>
+    <p>Joséphine le Poittevin se réserve le droit de refuser toute demande qu'elle jugerait non conforme aux bonnes mœurs et aux lois en vigueur.</p>
+    <p>Elle se réserve également le droit de refuser toute inscription, de mettre fin à un atelier ou de congédier toute personne ayant un comportement ou des propos inappropriés (aucun remboursement ne sera effectué dans ce dernier cas).</p>
+
+    <h2 class="font-display text-xl text-[var(--ink)] pt-4">Loi applicable — Litiges éventuels</h2>
+    <p>En cas de difficultés dans l'application des présentes conditions, le Client a la possibilité, avant toute action en justice, de rechercher une action à l'amiable. Dans l'hypothèse où le Client serait de nationalité étrangère, il est convenu que les contrats de vente conclus entre ce dernier et Joséphine le Poittevin resteront soumis à la loi française.</p>
+
+    <p class="text-xs text-[#8A7960] pt-4">Mise à jour des présentes conditions générales de vente : [date placeholder]</p>
+  </div>
+</section>
+
+<footer class="bg-[var(--ink)] text-[#F0E6D6]">
+  <div class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
+    <div>
+      <p class="font-display text-xl mb-3">Les ateliers créatifs de Joséphine</p>
+      <p class="text-sm text-[#C9BCA5] leading-relaxed">Montpellier et environs</p>
+      <p class="text-sm text-[#C9BCA5] mt-3">Suivez-moi <a href="#" class="text-terracotta hover:underline">@staremo.bene</a></p>
+    </div>
+    <div class="text-sm space-y-2 text-[#C9BCA5]">
+      <p>[Placeholder email]</p>
+      <p>06 85 26 50 58</p>
+      <p>Montpellier</p>
+    </div>
+    <div class="text-sm text-[#C9BCA5] space-x-4">
+      <a href="cgv.html" class="hover:text-white transition">CGV</a>
+      <a href="mentions-legales.html" class="hover:text-white transition">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  // Mobile "Les ateliers" submenu toggle
+  const ateliersToggle = document.getElementById('ateliersMobileToggle');
+  const ateliersSubmenu = document.getElementById('ateliersMobileSubmenu');
+  const ateliersChevron = document.getElementById('ateliersMobileChevron');
+  if (ateliersToggle) {
+    ateliersToggle.addEventListener('click', () => {
+      const isOpen = ateliersSubmenu.classList.toggle('open');
+      ateliersToggle.setAttribute('aria-expanded', isOpen);
+      ateliersChevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+    });
+  }
+</script>
+</body>
+</html>
