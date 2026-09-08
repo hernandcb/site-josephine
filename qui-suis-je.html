@@ -49,6 +49,34 @@
 }
 </script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="d4fb2e11-8e3e-4a9a-b101-d197ff6acac6"></script>
+<style>
+  .creations-carousel {
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+  }
+  .creations-carousel::-webkit-scrollbar {
+    height: 6px;
+  }
+  .creations-carousel::-webkit-scrollbar-thumb {
+    background: var(--terracotta);
+    border-radius: 999px;
+  }
+  .creations-carousel figure {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 240px;
+  }
+  @media (min-width: 768px) {
+    .creations-carousel figure {
+      width: 280px;
+    }
+  }
+</style>
 </head>
 <body class="antialiased" data-page="qui-suis-je">
 <div class="bg-flower" style="top: 60px; right: -40px; width: 130px; height: 130px; transform: rotate(15deg); opacity: 0.3;">
@@ -79,7 +107,6 @@
         </div>
       </div>
       <a href="agenda.html" class="nav-link hover:text-terracotta transition" data-page="agenda">Agenda</a>
-      <a href="creations.html" class="nav-link hover:text-terracotta transition" data-page="creations">Créations</a>
       <a href="qui-suis-je.html" class="nav-link hover:text-terracotta transition" data-page="qui-suis-je">Qui suis-je</a>
       <a href="contact.html" class="nav-link hover:text-terracotta transition" data-page="contact">Contact</a>
       <a href="bons-cadeaux.html" class="btn-outline px-4 py-2 rounded-full text-sm font-medium">Bons cadeaux</a>
@@ -102,7 +129,6 @@
         </div>
       </div>
       <a href="agenda.html" class="hover:text-terracotta transition">Agenda</a>
-      <a href="creations.html" class="hover:text-terracotta transition">Créations</a>
       <a href="qui-suis-je.html" class="hover:text-terracotta transition">Qui suis-je</a>
       <a href="contact.html" class="hover:text-terracotta transition">Contact</a>
       <a href="bons-cadeaux.html" class="btn-outline px-4 py-2 rounded-full text-sm font-medium inline-block w-fit">Bons cadeaux</a>
@@ -160,6 +186,60 @@
       </p>
     </div>
   </div>
+</section>
+
+<!-- MES CREATIONS - carrousel -->
+<section class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="font-display text-3xl text-center mb-2">Mes créations</h2>
+  <p class="text-center text-[#5A4F42] mb-10 max-w-lg mx-auto">Un aperçu de mon travail personnel, entre huile et aquarelle.</p>
+  <div class="creations-carousel">
+    <figure>
+      <img src="images/creations/Julie_et_Milo.jpeg" alt="Peinture à l'huile Julie et Milo par Joséphine, 60x80 cm, 2024" class="rounded-2xl aspect-[4/5] mb-3 w-full object-cover" />
+      <figcaption class="text-sm">
+        <p class="font-medium">Julie et Milo</p>
+        <p class="text-[#5A4F42]">60x80 cm, 2024</p>
+        <p class="text-xs text-terracotta mt-1">Prix du public, Mamastock Festival, 2025</p>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="images/creations/Sebastien.jpeg" alt="Peinture à l'huile Sébastien par Joséphine, 60x80 cm, 2025" class="rounded-2xl aspect-[4/5] mb-3 w-full object-cover" />
+      <figcaption class="text-sm">
+        <p class="font-medium">Sébastien</p>
+        <p class="text-[#5A4F42]">60x80 cm, 2025</p>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="images/creations/Golden_hour.jpeg" alt="Aquarelle Golden hour par Joséphine, 12x12 cm, 2025" class="rounded-2xl aspect-square mb-3 w-full object-cover" />
+      <figcaption class="text-sm">
+        <p class="font-medium">Golden hour</p>
+        <p class="text-[#5A4F42]">12x12 cm, 2025</p>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="images/creations/Montreal.jpeg" alt="Aquarelle Montréal par Joséphine, 12x12 cm, 2025" class="rounded-2xl aspect-square mb-3 w-full object-cover" />
+      <figcaption class="text-sm">
+        <p class="font-medium">Montréal</p>
+        <p class="text-[#5A4F42]">12x12 cm, 2025</p>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="images/creations/Sanary.jpeg" alt="Aquarelle Le port de Sanary par Joséphine, 15x15 cm, 2025" class="rounded-2xl aspect-square mb-3 w-full object-cover" />
+      <figcaption class="text-sm">
+        <p class="font-medium">Le port de Sanary</p>
+        <p class="text-[#5A4F42]">15x15 cm, 2025</p>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="images/creations/Les trois graces.jpeg" alt="Aquarelle Les Trois Grâces par Joséphine, 10x15 cm, 2026" class="rounded-2xl aspect-square mb-3 w-full object-cover" />
+      <figcaption class="text-sm">
+        <p class="font-medium">Les Trois Grâces</p>
+        <p class="text-[#5A4F42]">10x15 cm, 2026</p>
+      </figcaption>
+    </figure>
+  </div>
+  <p class="text-xs text-[#8A7960] text-center mt-6 max-w-2xl mx-auto leading-relaxed">
+    Toute reproduction de ces œuvres est strictement interdite sans l'accord écrit de Joséphine le Poittevin.
+  </p>
 </section>
 
 <!-- EXPOSITIONS -->
